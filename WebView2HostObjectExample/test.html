@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="button">Click me to test</button>
+
+<script>
+    document.getElementById('button').addEventListener('click', () => {
+        chrome.webview.hostObjects.bridge.MyFunction();
+    });
+</script>
+</body>
+</html>
